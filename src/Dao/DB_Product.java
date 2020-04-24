@@ -15,20 +15,20 @@ public class DB_Product {
 
     public int saveProduct(Product e){
 
-        String query="insert into produs values('"+e.getCategorie()+"','"+e.getDescriere()+"','"+e.getPoza()+"','"+e.getPret()+"');";
+        String query="insert into produs values('"+e.getCategorie()+"','"+e.getDescriere()+"','"+e.getPoza()+"','"+e.getPret()+"','"+e.getId()+"');";
 
 
         return jdbcTemplate.update(query);
     }
     public int updateProduct(Product e){
-        String query="update produs set"+"categorie='"+e.getCategorie()+"',descriere='"+e.getDescriere()+"',poza='"+e.getPoza()+"',pret='"+e.getPret()+"',produsid='"+e.getProdusid()+"';"
-                +"where produsid="+e.getProdusid();
+        String query="update produs set"+"categorie='"+e.getCategorie()+"',descriere='"+e.getDescriere()+"',poza='"+e.getPoza()+"',pret='"+e.getPret()+"',produsid='"+e.getId()+"';"
+                +"where produsid="+e.getId();
 
 
         return jdbcTemplate.update(query);
     }
     public int deleteProduct(Product e){
-        String query="delete from produs where id='"+e.getProdusid()+"' ";
+        String query="delete from produs where id='"+e.getId()+"' ";
         return jdbcTemplate.update(query);
     }
 

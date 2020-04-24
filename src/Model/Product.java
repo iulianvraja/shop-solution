@@ -5,24 +5,24 @@ public class Product {
     private String descriere;
 private String poza;
 private String pret;
-private int produsid;
+private int id;
 
 public Product(){}
 
-public Product(String categorie,String descriere,String poza,String pret,int produsid){
+public Product(String categorie,String descriere,String poza,String pret,int id){
      this.categorie=categorie;
      this.descriere=descriere;
      this.poza=poza;
      this.pret=pret;
-     this.produsid=produsid;
+     this.id=id;
 }
 
-    public int getProdusid() {
-        return produsid;
+    public int getId() {
+        return id;
     }
 
-    public void setProdusid(int produsid) {
-        this.produsid = produsid;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCategorie() {

@@ -30,7 +30,7 @@ public class ProductController  extends DB_Product {
         JdbcTemplate jdbcTemplate=(JdbcTemplate)ctx.getBean("jdbcTemplate");
         setJdbcTemplate(jdbcTemplate);
 
-        List<Product> arrProduse=Productscategory("laptopuri");
+        List<Product> arrProduse=Productscategory("Laptop&Gaming");
         for(Product i:arrProduse)
             System.out.println(i.getCategorie()+" ");
         x.addObject("lista",arrProduse);
@@ -91,7 +91,7 @@ public class ProductController  extends DB_Product {
         JdbcTemplate jdbcTemplate=(JdbcTemplate)ctx.getBean("jdbcTemplate");
         setJdbcTemplate(jdbcTemplate);
 
-        Product p=new Product(categorie,descriere,poza,pret,1);
+        Product p=new Product(categorie,descriere,poza,pret,0);
         saveProduct(p);
         ModelAndView x;
     if(LogginController.getlogat()==true)

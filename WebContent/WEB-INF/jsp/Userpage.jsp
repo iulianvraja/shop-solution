@@ -146,7 +146,7 @@
     <title></title>
 </head>
 
-<body>
+
 
 <nav class="navbar navbar-default">
     <div class="container">
@@ -187,14 +187,21 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> 7 - Items<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span>  Items<span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-cart" role="menu">
                         <div id="listacos">
 
                         </div>
 
                         <li class="divider"></li>
-                        <li><a class="text-center" href="">View Cart</a></li>
+                        <form action="/gotoOrder" method="post" modelAttribute="Order" >
+
+
+
+                                <input visible="hidden" type="hidden" id="inputid" name="inputid" value="">
+
+                        <button><a class="text-center" type="submit"  >OrderNow</a></button>
+                        </form>
                     </ul>
 
                 </li>>
@@ -229,12 +236,17 @@
 
 </body>
 <script>
+    var num=0;
+    var produse="";
     function addItem(poza,pret){
         var elem = document.getElementById('listacos');
 
+      num=num+1;
+      produse+=poza+',';
 
+        var inputvalue=document.getElementById('inputid').value=produse;
 
-       var str='<li>\n' +
+       var str='<li id='+num+'>\n' +
            '                  <span class="item">\n' +
            '                    <span class="item-left">\n' +
            '                        <img class="imgshop" src="' + poza +'" alt="" />\n' +
@@ -244,19 +256,27 @@
            '                        </span>\n' +
            '                    </span>\n' +
            '                    <span class="item-right">\n' +
-           '                        <button class="btn btn-xs btn-danger pull-right">x</button>\n' +
+           '                        <button class="btn btn-xs btn-danger pull-right" onclick="deleteItem('+num+poza+')">x</button>\n' +
            '                    </span>\n' +
            '                </span>\n' +
            '              </li>\n'
        elem.innerHTML+=str;
+writeToFile(produse);
 
     }
 
-    function deleteItem(){
-        var elem = document.getElementById('1');
+    function deleteItem(idd){
+        var elem = document.getElementById(idd);
         elem.remove();
         return 0;
     }
+
+    function writeToFile(){
+        var txtFile =new File("StringProduse");
+        txtFile.writeln(produse);
+        txtFile.close();
+    }
+
 </script>
 
 <script

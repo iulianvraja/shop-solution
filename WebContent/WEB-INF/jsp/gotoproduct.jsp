@@ -57,9 +57,9 @@
                 <input list="categorie" name="categorie">
 
                 <datalist id="categorie">
-                    <option value="Apartamente"/>
-                    <option value="Masini"/>
-                    <option value="AlteObiecte"/>
+                    <option value="Electrocasnice"/>
+                    <option value="Laptop&Gaming"/>
+                    <option value="AlteProduse"/>
 
                 </datalist>
         </p>
