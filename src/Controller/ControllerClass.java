@@ -25,7 +25,14 @@ public class ControllerClass extends DB_Product {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView home() {
    
+        System.out.println("salut");
+        ApplicationContext ctx=new ClassPathXmlApplicationContext("beans.xml");
+        JdbcTemplate jdbcTemplate=(JdbcTemplate)ctx.getBean("jdbcTemplate");
+        setJdbcTemplate(jdbcTemplate);
+        List<Product> p=allProducts();
         ModelAndView x=new ModelAndView("index");
+        x.addObject("lista",p);
+        return x;
         
         return x;
     }
