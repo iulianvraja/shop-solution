@@ -7,25 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a53a47ef-3481-4ee5-9651-92fc7d1f28cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProiectISS_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ProiectISS_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/Electronics.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/SuccessfullyLog.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/Userpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/Userpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/gotoproduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/gotoproduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/DB_Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/DB_Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ProiectISS.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/Electronics.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/SuccessfullyLog.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/Userpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/Userpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/gotoproduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/jsp/gotoproduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProiectISS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProiectISS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/DB_Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/DB_Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Dao/DB_Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/Dao/DB_Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-mvc-example/WEB-INF/classes/beans.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +54,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -540,8 +534,18 @@
       <workItem from="1584384478063" duration="1183000" />
       <workItem from="1587585421099" duration="5936000" />
       <workItem from="1587639131882" duration="10258000" />
-      <workItem from="1587716307112" duration="6509000" />
+      <workItem from="1587716307112" duration="14879000" />
+      <workItem from="1587898483876" duration="274000" />
+      <workItem from="1587900627180" duration="2217000" />
     </task>
+    <task id="LOCAL-00001" summary="final">
+      <created>1587727480238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587727480238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,6 +563,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
