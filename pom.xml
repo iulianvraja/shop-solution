@@ -2,11 +2,11 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.journaldev.spring.mvc</groupId>
-	<artifactId>spring-mvc-example</artifactId>
+	<artifactId>onlineshop98</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Spring MVC Example</name>
-	<description>Spring MVC Hello World Example</description>
+	<name>onlineshop98</name>
+	<description>now</description>
 
 	<!-- Add Spring Web and MVC dependencies -->
 	<dependencies>
@@ -73,21 +73,10 @@
 	<build>
 		<plugins>
 
-			
+
+
+
 			<plugin>
-  <artifactId>maven-assembly-plugin</artifactId>
-  <version>3.0.0</version>
-  <configuration>
-    <descriptorRefs>
-      <descriptorRef>jar-with-dependencies</descriptorRef>
-    </descriptorRefs>
-    <finalName>helloworld</finalName>
-  </configuration>
-</plugin>
-
-			
-
-				<plugin>
 
 
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -134,8 +123,18 @@
 				</executions>
 			</plugin>
 
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<finalName>onlineshop98</finalName>
+				</configuration>
+			</plugin>
 
 		</plugins>
-		<finalName>${project.artifactId}</finalName> <!-- added to remove Version from WAR file -->
+		<finalName>onlineshop98</finalName> <!-- added to remove Version from WAR file -->
 	</build>
 </project>
